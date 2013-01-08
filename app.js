@@ -23,7 +23,79 @@ passport.deserializeUser(function(obj, done) {
 });
 
 
-//yoyo
+
+
+//put in data ------------------------------------------
+
+  //NYT
+  var NYTdata = [
+     { title: "Arts", url: "http://www.nytimes.com/services/xml/rss/nyt/Arts.xml" },
+     { title: "Automobiles", url: "http://www.nytimes.com/services/xml/rss/nyt/Automobiles.xml" },
+     { title: "Books", url: "http://www.nytimes.com/services/xml/rss/nyt/Books.xml" },
+     { title: "Business", url: "http://www.nytimes.com/services/xml/rss/nyt/Business.xml" },
+     { title: "Campaign 2004", url: "http://www.nytimes.com/services/xml/rss/nyt/Campaigns.xml" },
+     { title: "Circuits", url: "http://www.nytimes.com/services/xml/rss/nyt/Circuits.xml" },
+     { title: "Editorials/Op-Ed", url: "http://www.nytimes.com/services/xml/rss/nyt/Opinion.xml" },
+     { title: "Fashion & Style", url: "http://www.nytimes.com/services/xml/rss/nyt/FashionandStyle.xml" },
+     { title: "Health", url: "http://www.nytimes.com/services/xml/rss/nyt/Health.xml" },
+     { title: "International", url: "http://www.nytimes.com/services/xml/rss/nyt/International.xml" },
+     { title: "Magazine", url: "http://www.nytimes.com/services/xml/rss/nyt/Magazine.xml" },
+     { title: "Media & Advertising", url: "http://www.nytimes.com/services/xml/rss/nyt/MediaandAdvertising.xml" },
+     { title: "Most E-Mailed Articles", url: "http://www.nytimes.com/services/xml/rss/nyt/pop_top.xml" },
+     { title: "Movies", url: "http://www.nytimes.com/services/xml/rss/nyt/Movies.xml" },
+     { title: "Multimedia", url: "http://www.nytimes.com/services/xml/rss/nyt/Multimedia.xml" },
+     { title: "National", url: "http://www.nytimes.com/services/xml/rss/nyt/National.xml" },
+     { title: "New York Region", url: "http://www.nytimes.com/services/xml/rss/nyt/NYRegion.xml" },
+     { title: "NYTimes.com Home Page", url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml" },
+     { title: "Real Estate", url: "http://www.nytimes.com/services/xml/rss/nyt/RealEstate.xml" },
+     { title: "Science", url: "http://www.nytimes.com/services/xml/rss/nyt/Science.xml" },
+     { title: "Sports", url: "http://www.nytimes.com/services/xml/rss/nyt/Sports.xml" },
+     { title: "Technology", url: "http://www.nytimes.com/services/xml/rss/nyt/Technology.xml" },
+     { title: "Theater", url: "http://www.nytimes.com/services/xml/rss/nyt/Theater.xml" },
+     { title: "Times on the Trail", url: "http://www.nytimes.com/services/xml/rss/nyt/Trail.xml" },
+     { title: "Travel", url: "http://www.nytimes.com/services/xml/rss/nyt/Travel.xml" },
+     { title: "Washington", url: "http://www.nytimes.com/services/xml/rss/nyt/Washington.xml" },
+     { title: "Week in Review", url: "http://www.nytimes.com/services/xml/rss/nyt/WeekinReview.xml" }
+  ];
+  var CNNdata = [
+     { title: "Arts", url: "http://www.nytimes.com/services/xml/rss/nyt/Arts.xml" },
+     { title: "Automobiles", url: "http://www.nytimes.com/services/xml/rss/nyt/Automobiles.xml" },
+     { title: "Books", url: "http://www.nytimes.com/services/xml/rss/nyt/Books.xml" },
+     { title: "Business", url: "http://www.nytimes.com/services/xml/rss/nyt/Business.xml" },
+     { title: "Campaign 2004", url: "http://www.nytimes.com/services/xml/rss/nyt/Campaigns.xml" },
+     { title: "Circuits", url: "http://www.nytimes.com/services/xml/rss/nyt/Circuits.xml" },
+     { title: "Editorials/Op-Ed", url: "http://www.nytimes.com/services/xml/rss/nyt/Opinion.xml" },
+     { title: "Fashion & Style", url: "http://www.nytimes.com/services/xml/rss/nyt/FashionandStyle.xml" },
+     { title: "Health", url: "http://www.nytimes.com/services/xml/rss/nyt/Health.xml" },
+     { title: "International", url: "http://www.nytimes.com/services/xml/rss/nyt/International.xml" },
+     { title: "Magazine", url: "http://www.nytimes.com/services/xml/rss/nyt/Magazine.xml" },
+     { title: "Media & Advertising", url: "http://www.nytimes.com/services/xml/rss/nyt/MediaandAdvertising.xml" },
+     { title: "Most E-Mailed Articles", url: "http://www.nytimes.com/services/xml/rss/nyt/pop_top.xml" },
+     { title: "Movies", url: "http://www.nytimes.com/services/xml/rss/nyt/Movies.xml" },
+     { title: "Multimedia", url: "http://www.nytimes.com/services/xml/rss/nyt/Multimedia.xml" },
+     { title: "National", url: "http://www.nytimes.com/services/xml/rss/nyt/National.xml" },
+     { title: "New York Region", url: "http://www.nytimes.com/services/xml/rss/nyt/NYRegion.xml" },
+     { title: "NYTimes.com Home Page", url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml" },
+     { title: "Real Estate", url: "http://www.nytimes.com/services/xml/rss/nyt/RealEstate.xml" },
+     { title: "Science", url: "http://www.nytimes.com/services/xml/rss/nyt/Science.xml" },
+     { title: "Sports", url: "http://www.nytimes.com/services/xml/rss/nyt/Sports.xml" },
+     { title: "Technology", url: "http://www.nytimes.com/services/xml/rss/nyt/Technology.xml" },
+     { title: "Theater", url: "http://www.nytimes.com/services/xml/rss/nyt/Theater.xml" },
+     { title: "Times on the Trail", url: "http://www.nytimes.com/services/xml/rss/nyt/Trail.xml" },
+     { title: "Travel", url: "http://www.nytimes.com/services/xml/rss/nyt/Travel.xml" },
+     { title: "Washington", url: "http://www.nytimes.com/services/xml/rss/nyt/Washington.xml" },
+     { title: "Week in Review", url: "http://www.nytimes.com/services/xml/rss/nyt/WeekinReview.xml" }
+  ]
+  var NBAdata;
+  var MLBdata;
+  var PTTdata;
+
+
+
+
+
+
+
 
 
 // Use the FacebookStrategy within Passport.
@@ -83,6 +155,7 @@ passport.use(new FacebookStrategy({
     for (var key in unicategorysum) {  
       newsum[key] = unicategorysum[key];  
     }  
+    var getfinalresault = new Array();
     newsum.sort(sortNumber);  
     console.log(newsum);
     for(var fncount = 2 ; fncount < 12;fncount++) {
@@ -90,10 +163,24 @@ passport.use(new FacebookStrategy({
         if (unicategorysum[i] == newsum[newsum.length - fncount]) {  
             //document.write("出现次数最多的元素是：" + yuansu[i] + "次数为：" + sum[i] + "<br/>");  
             console.log("可能喜歡的東西是：" + getunicategory[i] + "次数为：" + unicategorysum[i]);  
+            getfinalresault.push({category: getunicategory[i],times:unicategorysum[i]});
         }  
       }  
     }
+    
+    for (var yokey in getfinalresault){
+    console.log('比對後資料集成  分類：'+ getfinalresault[yokey].category+'總數：'+getfinalresault[yokey].times);
+    }
+    // for(var yokey in getfinalresault){
+    //   for (var key in NYTdata){
+    //      if (getfinalresault[yokey].category == NYTdata[key].title){
+
+    //      }
+    //   }
+    //   if (getfinalresault[yokey].category == 
+    // }
     //把上面資料寫入資料庫-------------------------------------
+    //比對NYTdata-------------------------------------------
 
     
 

@@ -167,18 +167,21 @@ passport.use(new FacebookStrategy({
         }  
       }  
     }
-    
+
     for (var yokey in getfinalresault){
     console.log('比對後資料集成  分類：'+ getfinalresault[yokey].category+'總數：'+getfinalresault[yokey].times);
     }
-    // for(var yokey in getfinalresault){
-    //   for (var key in NYTdata){
-    //      if (getfinalresault[yokey].category == NYTdata[key].title){
-
-    //      }
-    //   }
-    //   if (getfinalresault[yokey].category == 
-    // }
+    var getsearchresault = new Array();
+    for(var yokey in getfinalresault){
+      for (var key in NYTdata){
+         if (getfinalresault[yokey].category == NYTdata[key].title){
+            getsearchresault.push({source:'NYT',category:NYTdata[key].title,url:NYTdata[key].url})
+         }
+      }
+    }
+    for (var key in getsearchresault){
+      console.log('比對後的結果如右'+getsearchresault[key].category)
+    }
     //把上面資料寫入資料庫-------------------------------------
     //比對NYTdata-------------------------------------------
 

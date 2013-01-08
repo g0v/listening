@@ -87,7 +87,40 @@ passport.deserializeUser(function(obj, done) {
      { title: "Week in Review", url: "http://www.nytimes.com/services/xml/rss/nyt/WeekinReview.xml" }
   ]
   var NBAdata;
-  var MLBdata;
+  var MLBdata=[
+     { title: "MLB", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/mlb.xml" },
+     { title: "Los Angeles Angels of Anaheim", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/ana.xml" },
+     { title: "Oakland Athletics", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/oak.xml" },
+     { title: "Toronto Blue Jays", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/tor.xml" },
+     { title: "Tampa Bay Rays", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/tb.xml" },
+     { title: "Cleveland Indians", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/cle.xml" },
+     { title: "Seattle Mariners", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/sea.xml" },
+     { title: "Baltimore Orioles", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/bal.xml" },
+     { title: "Texas Rangers", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/tex.xml" },
+     { title: "Boston Red Sox", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/box.xml" },
+     { title: "Kansas City Royals", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/kc.xml" },
+     { title: "Detroit Tigers", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/det.xml" },
+     { title: "Minnesota Twins", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/min.xml" },
+     { title: "Chicago White Sox", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/cws.xml" },
+     { title: "New York Yankees", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/nyy.xml" },
+     { title: "Houston Astros", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/hou.xml" },
+     { title: "Atlanta Braves", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/atl.xml" },
+     { title: "Milwaukee Brewers", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/mil.xml" },
+     { title: "St. Louis Cardinals", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/stl.xml" },
+     { title: "Chicago Cubs", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/chc.xml" },
+     { title: "Arizona Diamondbacks", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/ari.xml" },
+     { title: "Los Angeles Dodgers", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/lad.xml" },
+     { title: "San Francisco Giants", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/sf.xml" },
+     { title: "Miami Marlins", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/mia.xml" },
+     { title: "New York Mets", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/nym.xml" },
+     { title: "Washington Nationals", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/was.xml" },
+     { title: "San Diego Padres", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/sd.xml" },
+     { title: "Philadelphia Phillies", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/phi.xml" },
+     { title: "Pittsburgh Pirates", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/pit.xml" },
+     { title: "Cincinnati Reds", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/cin.xml" },
+     { title: "Colorado Rockies", url: "http://mlb.mlb.com/partnerxml/gen/news/rss/col.xml" }
+
+  ]
   var PTTdata;
 
 
@@ -155,7 +188,7 @@ passport.use(new FacebookStrategy({
     for (var key in unicategorysum) {  
       newsum[key] = unicategorysum[key];  
     }  
-    var getfinalresault = new Array();
+    var getfinalcategoryresault = new Array();
     newsum.sort(sortNumber);  
     console.log(newsum);
     for(var fncount = 2 ; fncount < 12;fncount++) {
@@ -163,28 +196,34 @@ passport.use(new FacebookStrategy({
         if (unicategorysum[i] == newsum[newsum.length - fncount]) {  
             //document.write("出现次数最多的元素是：" + yuansu[i] + "次数为：" + sum[i] + "<br/>");  
             console.log("可能喜歡的東西是：" + getunicategory[i] + "次数为：" + unicategorysum[i]);  
-            getfinalresault.push({category: getunicategory[i],times:unicategorysum[i]});
+            getfinalcategoryresault.push({category: getunicategory[i],times:unicategorysum[i]});
         }  
       }  
     }
 
-    for (var yokey in getfinalresault){
-    console.log('比對後資料集成  分類：'+ getfinalresault[yokey].category+'總數：'+getfinalresault[yokey].times);
+    for (var yokey in getfinalcategoryresault){
+    console.log('比對後資料集成  分類：'+ getfinalcategoryresault[yokey].category+'總數：'+getfinalcategoryresault[yokey].times);
     }
     var getsearchresault = new Array();
-    for(var yokey in getfinalresault){
+    for(var yokey in getfinalcategoryresault){
+
+      //比對NYT data
       for (var key in NYTdata){
-         if (getfinalresault[yokey].category == NYTdata[key].title){
+         if (getfinalcategoryresault[yokey].category == NYTdata[key].title){
             console.log(NYTdata[key].title);
             getsearchresault.push({source:'NYT',category:NYTdata[key].title,url:NYTdata[key].url})
          }
       }
+      //比對NYT data
+      //比對NYT data
+      //比對NYT data
+      //比對NYT data
     }
+    //show出結果
     for (var key in getsearchresault){
       console.log('比對後的結果如右'+getsearchresault[key].category)
     }
-    //把上面資料寫入資料庫-------------------------------------
-    //比對NYTdata-------------------------------------------
+    
 
     
 
@@ -334,7 +373,7 @@ app.get('/logout', function(req, res) {
 //parse Html by YQL
 app.get('/parse', function(req, res) {
 
-  new YQL.exec('select * from data.html.cssselect where url="http://net.tutsplus.com/" and css=".post_title a"', function(response) {
+  new YQL.exec('select * from data.html.cssselect where url="http://www.facebook.com/" and css=".post_title a"', function(response) {
       //response consists of JSON that you can parse
   
 

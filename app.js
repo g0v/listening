@@ -23,6 +23,9 @@ passport.deserializeUser(function(obj, done) {
 });
 
 
+//yoyo
+
+
 // Use the FacebookStrategy within Passport.
 //   Strategies in Passport require a `verify` function, which accept
 //   credentials (in this case, an accessToken, refreshToken, and Facebook

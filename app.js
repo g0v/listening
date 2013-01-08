@@ -175,6 +175,7 @@ passport.use(new FacebookStrategy({
     for(var yokey in getfinalresault){
       for (var key in NYTdata){
          if (getfinalresault[yokey].category == NYTdata[key].title){
+            console.log(NYTdata[key].title);
             getsearchresault.push({source:'NYT',category:NYTdata[key].title,url:NYTdata[key].url})
          }
       }

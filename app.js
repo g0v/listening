@@ -368,16 +368,20 @@ app.get('/logout', function(req, res) {
   res.redirect('/');
 });
 
-
+app.get('/header', function(req, res) {
+  res.render('header', {
+    
+  });
+});
 
 //parse Html by YQL
 app.get('/parse', function(req, res) {
 
-  new YQL.exec('select * from data.html.cssselect where url="http://www.facebook.com/" and css=".post_title a"', function(response) {
+  //new YQL.exec('select * from data.html.cssselect where url="http://www.facebook.com/" and css=".post_title a"', function(response) {
       //response consists of JSON that you can parse
   
 
-  });
+  //});
 
 });
 

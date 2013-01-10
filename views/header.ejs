@@ -1,0 +1,110 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" media="all" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="/css/custom.css">
+
+
+</head>
+<body>
+	<div id="sidebar">
+		<header id="header">
+			<div id="logo">
+				<a href="#">
+					<!--<img src="<?php get_option_tree('rb_logo_path', $theme_options, true); ?>" alt="<?php bloginfo('name'); ?>" />-->
+				</a>
+			</div>
+			<p id="tagline"><?php bloginfo('description'); ?></p>
+		</header>
+		<nav id="menu">
+			<!--<?php wp_nav_menu( array(
+				 'container' =>false,
+				 'menu_class' => 'main-menu',
+				 'echo' => true,
+				 'before' => '',
+				 'after' => '',
+				 'link_before' => '',
+				 'link_after' => '',
+				 'depth' => 2,
+				 'walker' => new menu_default_walker())
+			 );
+			?>-->
+		</nav>
+		<form id="responsiveMenu">
+			<select>
+				<option selected data-href="#">Site Navigation</option>
+				<!--<?php wp_nav_menu( array(
+					 'container' =>false,
+					 'menu_class' => 'responsive-menu',
+					 'echo' => true,
+					 'before' => '',
+					 'after' => '',
+					 'link_before' => '',
+					 'link_after' => '',
+					 'depth' => 2,
+					 'walker' => new menu_responsive_walker())
+				 );
+				?>-->
+			</select>
+		</form>
+		<footer id="copy">
+			<!--<p><?php get_option_tree('rb_footer_text', $theme_options, true); ?></p>-->
+			<p>Copyright by Blue Chen</p>
+		</footer>
+		<a href="#" id="close">close sidebar</a>
+	</div>
+
+		<section id="portfolio" class="folioGrid clearfix">
+
+			<!--<?php while (have_posts()) : the_post(); 
+			
+				$paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+				$args = array( 'posts_per_page' => -1, 
+					   'offset'=> 0,
+					   'post_type' => 'portfolio');
+
+				$all_posts = new WP_Query($args);
+
+				while($all_posts->have_posts()) : $all_posts->the_post();
+				
+				$portfolio_terms = wp_get_object_terms($post->ID, 'portfolio_category');
+				$portfolio_class = "folioItem " . $portfolio_terms[0]->slug;
+				$portfolio_sort = $portfolio_terms[0]->slug . '[1][0]';
+				$portfolio_type = $portfolio_terms[0]->slug;
+
+			?>-->
+
+			<a id="post-1" class="<?php echo $portfolio_class; ?>" data-sort="<?php echo $portfolio_sort; ?>" data-type="<?php echo $portfolio_type; ?>" href="<?php the_permalink(); ?>" data-name="<?php echo $post->post_name; ?>">
+
+				<!--<?php the_post_thumbnail('portfolio-thumb', array('class' => 'folioThumb'));?>-->
+
+				<div class="folioTextHolder">
+					<p><%= user %></p>
+					<div class="folioText">
+						<h3><!--<?php the_title(); ?>--></h3>
+						<p><!--<?php rb_excerpt('rb_excerptlength_folio', 'rb_excerptmore'); ?>--></p>
+					</div>
+				</div>
+				
+			</a>
+		<!--	<?php endwhile; ?>
+		<?php endwhile; ?>-->
+
+		<ul class="folioCategories hidden">
+		<!--<?php 
+
+		$portfolio_categories = get_categories(array('taxonomy'=>'portfolio_category'));
+		foreach($portfolio_categories as $portfolio_category)
+			echo '<li>' . $portfolio_category->slug . '</li>';
+		?>-->
+		<li>yoyo</li>
+		</ul>
+
+		</section>
+
+
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/plugins.min.js"></script>
+<script type="text/javascript" src="/js/scripts.js"></script>
+</body>
+</html>

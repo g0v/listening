@@ -4,10 +4,11 @@ var express = require('express'),
   FacebookStrategy = require('passport-facebook').Strategy,
   jQuery = require('jquery');
 
-var FACEBOOK_APP_ID = "472891892763096"
+var FACEBOOK_APP_ID = "472891892763096";
 var FACEBOOK_APP_SECRET = "04ff2e9610264f40d9881428459c5c89";
 var FB = require('fb');
 var YQL = require("yql");
+var AM = require('./server/account-manager');
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
 //   serialize users into and deserialize users out of the session.  Typically,
@@ -418,7 +419,7 @@ app.get('/time',function(req, res) {
       setTimeout(countdown,1000)
   } 
 
-  
+
   
   
 });
@@ -433,6 +434,11 @@ app.get('/parse', function(req, res) {
 
 });
 
+//Login mongoDB
+app.get('/testMongodb', function(req, res) {
+
+
+});
 
 app.listen(3000);
 

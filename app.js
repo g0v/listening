@@ -8,7 +8,10 @@ var FACEBOOK_APP_ID = "472891892763096";
 var FACEBOOK_APP_SECRET = "04ff2e9610264f40d9881428459c5c89";
 var FB = require('fb');
 var YQL = require("yql");
-var AM = require('./server/account-manager');
+//var AM = require('./server/account-manager');
+
+
+
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
 //   serialize users into and deserialize users out of the session.  Typically,

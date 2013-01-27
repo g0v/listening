@@ -340,26 +340,38 @@ app.configure(function() {
   app.use(express.static(__dirname + '/public'));
 });
 
+app.get('/', function(req, res) {
+  res.render('index', {
+    user: req.user
+  });
+});
 // app.get('/', function(req, res) {
-//   res.render('index', {
+//   res.render('listening', {
+//     //user: req.user
+//   });
+// });
+
+// app.get('/account', ensureAuthenticated, function(req, res) {
+//   res.render('account', {
+//     user: req.user
+//   });
+
+// });
+
+// app.get('/login', function(req, res) {
+//   res.render('login', {
 //     user: req.user
 //   });
 // });
-app.get('/', function(req, res) {
-  res.render('listening', {
-    //user: req.user
-  });
-});
-
 app.get('/account', ensureAuthenticated, function(req, res) {
-  res.render('account', {
+  res.render('listening', {
     user: req.user
   });
 
 });
 
 app.get('/login', function(req, res) {
-  res.render('login', {
+  res.render('listening', {
     user: req.user
   });
 });

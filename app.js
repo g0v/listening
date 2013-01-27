@@ -11,7 +11,7 @@ var YQL = require("yql");
 //var AM = require('./server/account-manager');
 
 
-  
+
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
 //   serialize users into and deserialize users out of the session.  Typically,
@@ -162,7 +162,7 @@ passport.use(new FacebookStrategy({
       getfblikes[key] = res.data[key].category;
     }
     console.log('我得到了:' + getfblikes);
-    
+
     //簡化作法1---------------------------------------------
     // getfblikes.forEach(function(value) {
     //   if(getunicategory.indexOf(value) == -1) {
@@ -172,42 +172,42 @@ passport.use(new FacebookStrategy({
     //console.log('我簡化了:' + getunicategory);
 
     //簡化並算出重覆次數2-------------------------------------
-    var count = 1;  
-    var getunicategory= new Array();//存放数组array的不重复的元素比如{4,5,7,8,2,67,89,}  
-    var unicategorysum = new Array(); //存放数组array中每个不同元素的出现的次数  
-    for (var i = 0; i < getfblikes.length; i++) {   
-        for(var j=i+1;j<getfblikes.length;j++)  
-        {  
-            if (getfblikes[i] == getfblikes[j]) {  
-                count++;//用来计算与当前这个元素相同的个数  
-                getfblikes.splice(j, 1); //若相同，把這元素一除掉 
-                j--;   
-            }  
-        }  
-        getunicategory[i] = getfblikes[i];//将当前的元素存入到yuansu数组中  
-        unicategorysum[i] = count;  //并且将有多少个当前这样的元素的个数存入unicategorysum数组中  
-        count =1;  //再将count重新赋值，进入下一个元素的判断  
-    }  
+    var count = 1;
+    var getunicategory= new Array();//存放数组array的不重复的元素比如{4,5,7,8,2,67,89,}
+    var unicategorysum = new Array(); //存放数组array中每个不同元素的出现的次数
+    for (var i = 0; i < getfblikes.length; i++) {
+        for(var j=i+1;j<getfblikes.length;j++)
+        {
+            if (getfblikes[i] == getfblikes[j]) {
+                count++;//用来计算与当前这个元素相同的个数
+                getfblikes.splice(j, 1); //若相同，把這元素一除掉
+                j--;
+            }
+        }
+        getunicategory[i] = getfblikes[i];//将当前的元素存入到yuansu数组中
+        unicategorysum[i] = count;  //并且将有多少个当前这样的元素的个数存入unicategorysum数组中
+        count =1;  //再将count重新赋值，进入下一个元素的判断
+    }
     console.log('我簡化了：'+ getfblikes);//這時候array已變
-    
+
     console.log('我簡化了：'+ getunicategory);
     console.log('出現次數：'+unicategorysum);
     //讓數值由高到低排列---------------------------------------
-    var newsum = new Array(); //  sum;  
-    for (var key in unicategorysum) {  
-      newsum[key] = unicategorysum[key];  
-    }  
+    var newsum = new Array(); //  sum;
+    for (var key in unicategorysum) {
+      newsum[key] = unicategorysum[key];
+    }
     var getfinalcategoryresault = new Array();
-    newsum.sort(sortNumber);  
+    newsum.sort(sortNumber);
     console.log(newsum);
     for(var fncount = 2 ; fncount < 12;fncount++) {
-      for (var i = 0; i < unicategorysum.length; i++) {  
-        if (unicategorysum[i] == newsum[newsum.length - fncount]) {  
-            //document.write("出现次数最多的元素是：" + yuansu[i] + "次数为：" + sum[i] + "<br/>");  
-            console.log("可能喜歡的東西是：" + getunicategory[i] + "次数为：" + unicategorysum[i]);  
+      for (var i = 0; i < unicategorysum.length; i++) {
+        if (unicategorysum[i] == newsum[newsum.length - fncount]) {
+            //document.write("出现次数最多的元素是：" + yuansu[i] + "次数为：" + sum[i] + "<br/>");
+            console.log("可能喜歡的東西是：" + getunicategory[i] + "次数为：" + unicategorysum[i]);
             getfinalcategoryresault.push({category: getunicategory[i],times:unicategorysum[i]});
-        }  
-      }  
+        }
+      }
     }
 
     for (var yokey in getfinalcategoryresault){
@@ -250,9 +250,9 @@ passport.use(new FacebookStrategy({
         success: function(res) {
           console.log(res);
         },
-        
+
       });
-      
+
 
     };
 
@@ -292,7 +292,7 @@ passport.use(new FacebookStrategy({
 
     //get closed fr posts
     // for (var key in getclosedfr_id){
-      
+
     //   var thisfr_postid = new Array();
     //   FB.api(getclosedfr_id[key]+'/friendlists', {
     //     fields: 'id,message',
@@ -420,7 +420,7 @@ app.get('/time',function(req, res) {
          console.log('耶比');
        }
       setTimeout(countdown,1000)
-  }   
+  }
 });
 
 
@@ -461,7 +461,7 @@ app.post('/new', function(req, res){
 });
 
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 
 // Simple route middleware to ensure user is authenticated.
@@ -479,7 +479,7 @@ function ensureAuthenticated(req, res, next) {
 }
 
 function re(){
-  return req='hihi' 
+  return req='hihi'
 }
 
 function toBase64(str) {
@@ -490,8 +490,8 @@ function sortNumber(a, b)
 return a - b
 }
 function strtotime(text, now) {
-  // Convert string representation of date and time to a timestamp  
-  // 
+  // Convert string representation of date and time to a timestamp
+  //
   // version: 1109.2015
   // discuss at: http://phpjs.org/functions/strtotime
   // +   original by: Caio Ariede (http://caioariede.com)

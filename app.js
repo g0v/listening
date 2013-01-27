@@ -11,7 +11,7 @@ var YQL = require("yql");
 //var AM = require('./server/account-manager');
 
 
-
+  
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
 //   serialize users into and deserialize users out of the session.  Typically,
@@ -420,28 +420,21 @@ app.get('/time',function(req, res) {
          console.log('耶比');
        }
       setTimeout(countdown,1000)
-  } 
-
-
-  
-  
+  }   
 });
-//parse Html by YQL
-app.get('/parse', function(req, res) {
+app.get('/listening',function(req,res){
 
-  //new YQL.exec('select * from data.html.cssselect where url="http://www.facebook.com/" and css=".post_title a"', function(response) {
-      //response consists of JSON that you can parse
-  
-
-  //});
-
-});
+  res.render('listening', {
+    user: 'yoyom'
+  });
+})
 
 //Login mongoDB
 app.get('/testMongodb', function(req, res) {
 
 
 });
+
 
 app.listen(3000);
 

@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>tracking.js - hello world</title>
+
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" media="all" href="/css/jquery.gridster.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/modern.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/modern-responsive.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/main_layout.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.gridster.min.js"></script>
+	<script type="text/javascript" src="/js/tracking.js"></script>
+	<script type="text/javascript" src="/js/human.js"></script>
+	<script type="text/javascript" src="/js/color.js"></script>
+	<script type="text/javascript" src="/js/frontal_face.js"></script>
+    <style>
+        .page{
+            width: 940px;
+            margin:auto
+        }
+        /*--------------Camera----------------*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        canvas {
+            -moz-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            filter: FlipH;
+            transform: scale(-1, 1);
+        }
+        /*----------------show content----------------*/
+
+    </style>
+
+</head>
+<body>
+ <div class="grid">
+    <div class="page">
+        <div class="nav-bar">
+            <div class="nav-bar-inner padding10">
+                <span class="pull-menu"></span>
+
+                <a href="/"><span class="element brand">
+                    <!--<img class="place-left" src="images/logo32.png" style="height: 20px">-->
+                    3D Print and Detect Demo <small></small>
+                </span></a>
+
+                <div class="divider"></div>
+                 <p class="indent" style="float:right;color:#fff">2013.01.19 on VIA</p>
+            </div>
+        </div>
+
+        <div id="hint" style="width:100%;text-align:center;margin-top:50px">
+            <img src="../images/lol.png" width="200px">
+            <br/>
+            <br/>
+            Please use your camera to load your weapon!
+        </div>
+        <div id="turnright" style="display:none;">
+            <img src="../images/turnright.png" width="50px;" style="margin-left:450px">
+        </div>
+        <div id="turnup" style="display:none;">
+            <img src="../images/turnup.png" height="73px;" style="margin-left:470px">
+        </div>
+        <div id="wait" style="text-align:center;display:none">
+            <h3>Wait...</h3>
+        </div>
+        <div id="loading" style="width:100%;text-align:center;margin-top:50px;display:none">
+            <img src="../images/lol.png" width="200px">
+            <br/>
+            <br/>
+            <img src="../images/preloader-w8-line-black.gif" >
+        </div>
+        <div id="shownotification" style="width:100%;text-align:center;margin-top:50px;display:none;">
+            <img src="../images/lol.png" width="200px">
+            <br/>
+            <br/>
+            <h2 >Hello, Blue Chen!</h2>
+
+        </div>
+
+    </div>
+</div>
+    <script>
+       //var  videotag = 
+        var videoCamera = new tracking.VideoCamera().hide().render().renderVideoCanvas(),
+            ctx = videoCamera.canvas.context;
+        //document.getElementById('videotag').innerHTML = ctx;
+        var t1 = videoCamera.track({
+            type: 'color',
+            color: 'magenta',
+            onFound: function(track) {
+
+                showhello();
+            }
+        });
+        var setshow = 0;
+           // checkface = 0;
+        var t2 = videoCamera.track({
+            type: 'color',
+            color: 'cyan',
+
+            onFound: function(track) {
+                //console.log(track);
+                var size = 60 - track.z;
+                ctx.strokeStyle = "rgb(0,255,255)";
+                ctx.lineWidth = 3;
+                ctx.strokeRect(track.x - size*0.5, track.y - size*0.5, size, size);
+                
+                setshow ++;
+                if(setshow == 1){
+                    setshowweapon();
+                }
+
+
+            }
+        });
+        function setshowweapon(){
+            console.log('yoyo');
+            var turnright = document.getElementById('turnright');
+            var hint = document.getElementById('hint');
+            turnright.style.display = 'block';
+            hint.style.display="none";
+
+
+            setTimeout("wait1()",3000);
+            setTimeout("turnup()",5000);
+            setTimeout("wait2()",8000);
+            setTimeout("showweapon()",12000);
+
+        }
+        function wait1(){
+            var turnright = document.getElementById('turnright');
+            var wait= document.getElementById('wait');
+            turnright.style.display = 'none';
+            wait.style.display = 'block'
+
+        }
+        function turnup(){
+            var wait= document.getElementById('wait');
+            var turnup = document.getElementById('turnup');
+            wait.style.display = 'none'
+            turnup.style.display = 'block';
+            
+        }
+        function wait2(){
+            var turnup = document.getElementById('turnup');
+            var wait= document.getElementById('wait');
+            turnup.style.display = 'none';
+            wait.style.display = 'block'
+
+        }
+        function showweapon(){
+             window.location.href = "../showweapon";
+        }
+    </script>
+</body>
+</html>

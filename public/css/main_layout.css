@@ -1,0 +1,25 @@
+body{
+	background-color:#F1F0F0;
+	width:100%;
+}
+.headerbar{
+   padding: 30px;
+   height: 80px;
+}
+.logo_bar{
+   margin-right: 200px;
+}
+.page{
+   width: 940px;
+   margin: auto;
+}
+.nav-bar-inner{
+   width: 270px;
+   margin: auto;
+}
+.dividbar{
+   width: 1px;
+   height: 30px;
+   background: #aaa;
+   float: left;
+}

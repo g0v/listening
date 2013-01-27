@@ -422,6 +422,8 @@ app.get('/time',function(req, res) {
       setTimeout(countdown,1000)
   }   
 });
+
+
 app.get('/listening',function(req,res){
 
   res.render('listening', {
@@ -429,6 +431,10 @@ app.get('/listening',function(req,res){
   });
 })
 
+app.post('/listening', function(req, res){
+
+
+});
 //Login mongoDB
 app.get('/testMongodb', function(req, res) {
 

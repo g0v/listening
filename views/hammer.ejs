@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>tracking.js - hello world</title>
+
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" media="all" href="/css/jquery.gridster.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/modern.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/modern-responsive.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/main_layout.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.gridster.min.js"></script>
+	<script type="text/javascript" src="/js/tracking.js"></script>
+	<script type="text/javascript" src="/js/human.js"></script>
+	<script type="text/javascript" src="/js/color.js"></script>
+	<script type="text/javascript" src="/js/frontal_face.js"></script>
+    <style>
+        .page{
+            width: 940px;
+            margin:auto
+        }
+        /*--------------Camera----------------*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        canvas {
+            -moz-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            filter: FlipH;
+            transform: scale(-1, 1);
+        }
+        /*----------------show content----------------*/
+
+    </style>
+
+</head>
+<body>
+ <div class="grid">
+    <div class="page">
+        <div class="nav-bar">
+            <div class="nav-bar-inner padding10">
+                <span class="pull-menu"></span>
+
+                <a href="/"><span class="element brand">
+                    <!--<img class="place-left" src="images/logo32.png" style="height: 20px">-->
+                    3D Print and Detect Demo <small></small>
+                </span></a>
+
+                <div class="divider"></div>
+                 <p class="indent" style="float:right;color:#fff">2013.01.19 on VIA</p>
+            </div>
+        </div>
+
+        <div style="width:100%;text-align:center;margin-top:100px">
+            Please Open your Camera!
+        </div>
+        <div id="shownotification" style="display:none;">
+            
+        </div>
+
+    </div>
+</div>
+    <script>
+        //var  videotag = 
+        var videoCamera = new tracking.VideoCamera().hide().render().renderVideoCanvas(),
+            ctx = videoCamera.canvas.context;
+        //document.getElementById('videotag').innerHTML = ctx;
+        var t1 = videoCamera.track({
+            type: 'color',
+            color: 'magenta',
+            onFound: function(track) {
+
+                showhello();
+            }
+        });
+        var setshow = 0;
+           // checkface = 0;
+        
+        var t3 = videoCamera.track(
+        {
+
+            type: 'human',
+            data: 'frontal_face',
+            onFound: function(track) {
+                var size = 60 - track.z;
+                ctx.strokeStyle = "rgb(0,255,255)";
+                ctx.lineWidth = 3;
+                ctx.strokeRect(track.x - size*0.5, track.y - size*0.5, size, size);
+
+        }
+        });
+
+        var t2 = videoCamera.track({
+            type: 'color',
+            color: 'cyan',
+
+            onFound: function(track) {
+            	//console.log(track);
+                var size = 60 - track.z;
+                ctx.strokeStyle = "rgb(0,255,255)";
+                ctx.lineWidth = 3;
+                ctx.strokeRect(track.x - size*0.5, track.y - size*0.5, size, size);
+                
+                setshow ++;
+                if(setshow == 1){
+                    setshowweapon();
+                }
+
+
+            }
+        });
+        function setshowweapon(){
+            console.log('yoyo');
+            setTimeout("hihi()",5000);
+
+
+        }
+        function hihi (){
+            alert('This is Golden snape weapon!')
+            console.log('hihi')
+        }
+        function showhello(){
+                            var shownotification = document.getElementById('shownotification');
+                shownotification.innerHTML = 'Detect...';
+        }
+        //document.getElementsByTagName('canvas').style.marginLeft = '200px';
+        /*var t3 = videoCamera.track(
+        {
+            type: 'human',
+            data: 'frontal_face',
+            onFound: function(track) {
+            }
+        }
+    );*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<!DOCTYPE HTML> <html> <body> <canvas id="canvas" width="600"height="400"> </canvas>
+<script type="text/javascript"> var canvas =document.getElementById("canvas"); var context2D =canvas.getContext("2d");
+context2D.clearRect(0,0,600,400);
+draw(30,20,100,100,"AAA", context2D); draw(100,100,300,200,"CCC", context2D); draw(300,200,400,100,"BBB", context2D);
+function draw(x1,y1,x2,y2,str,context2D){ context2D.save();
+context2D.beginPath(); context2D.moveTo(x1,y1); context2D.lineTo(x2,y2); context2D.stroke(); var k = (y2-y1)/(x2-x1);
+var c = Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2)); context2D. translate(x1,y1); context2D.rotate(Math.atan(k)); if(x1>x2) { context2D.fillText(str, -c/2, 0); } else { context2D.fillText(str, c/2, 0); } context2D.restore(); }
+</script> </body> </html>

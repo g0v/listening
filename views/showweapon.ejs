@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>tracking.js - hello world</title>
+
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" media="all" href="/css/jquery.gridster.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/modern.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/modern-responsive.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/main_layout.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.gridster.min.js"></script>
+	<script type="text/javascript" src="/js/tracking.js"></script>
+	<script type="text/javascript" src="/js/human.js"></script>
+	<script type="text/javascript" src="/js/color.js"></script>
+	<script type="text/javascript" src="/js/frontal_face.js"></script>
+    <style>
+        .page{
+            width: 940px;
+            margin:auto
+        }
+        /*--------------Camera----------------*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        canvas {
+            -moz-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            filter: FlipH;
+            transform: scale(-1, 1);
+        }
+        /*----------------show content----------------*/
+
+    </style>
+
+</head>
+<body>
+ <div class="grid">
+    <div class="page" style="text-align:center">
+        <div class="nav-bar">
+            <div class="nav-bar-inner padding10">
+                <span class="pull-menu"></span>
+
+                <a href="/"><span class="element brand">
+                    <!--<img class="place-left" src="images/logo32.png" style="height: 20px">-->
+                    3D Print and Detect Demo <small></small>
+                </span></a>
+
+                <div class="divider"></div>
+                 <p class="indent" style="float:right;color:#fff">2013.01.19 on VIA</p>
+            </div>
+        </div>
+
+        <div id="hint" style="width:100%;text-align:center;margin-top:20px">
+            <img src="../images/lol.png" width="200px">
+            <br/>
+            <br/>
+        </div>
+        <h3>ID : Game savior</h3>
+        <h4>103W / 13L</h4>
+        </button>
+        <div style="width:100%;">
+            <div class="span3" style="float:left;margin-left:0px">
+                <!--</br>
+                <h3 style="text-align:center">Give me a weapon!</h3></br>
+                <div style="width:100%;height:100px;background:#ddd;border:1px solid #999;border-radius:10px" onclick="gotoweapondetect();">
+                    <img src="../images/ew.png" width="50px" style="margin-top:20px;">
+                </div>-->
+            </div>
+            <div class="span4" style="float:left;text-align:center;">
+                <!--<h3>Annie</h3>-->
+                <br/>
+                <br/>
+                <img src="../images/annieweapon.png" width="200px" style="margin-left:100px">
+                <br/>
+                <!--<img src="../images/annieweapon.png" width="200px">-->
+                
+            </div>
+
+            <div class="span5" style="float:left;">
+                <img src="../images/value.png" width="250px" style="margin-left:130px;margin-top:20px">
+            </div>
+        </div>
+        <div id="loading" style="width:100%;text-align:center;margin-top:50px;display:none">
+            <img src="../images/lol.png" width="200px">
+            <br/>
+            <br/>
+            <img src="../images/preloader-w8-line-black.gif" >
+        </div>
+        <div id="shownotification" style="width:100%;text-align:center;margin-top:50px;display:none;">
+            <img src="../images/lol.png" width="200px">
+            <br/>
+            <br/>
+            <h2 >Hello, Blue Chen!</h2>
+
+        </div>
+
+    </div>
+</div>
+<script>
+    function gotoweapondetect(){
+        window.location.href = "../gotoweapondetect";
+    }
+</script>
+</body>
+</html>

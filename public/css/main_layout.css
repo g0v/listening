@@ -31,3 +31,6 @@ body{
    margin: auto;
    border: 1px #a7a7a7 solid;
 }
+.command-button{
+   width:300px
+}

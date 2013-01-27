@@ -448,6 +448,17 @@ app.get('/education', function(req, res) {
   });
 
 });
+app.get('/showlistening', function(req, res) {
+  res.render('showlistening', {
+    user: 'yoyom'
+  });
+
+});
+app.post('/new', function(req, res){
+  res.render('showlistening', {
+    user: 'yoyom'
+  });
+});
 
 
 app.listen(3000);

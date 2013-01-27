@@ -34,3 +34,13 @@ body{
 .command-button{
    width:300px
 }
+.indexcontent{
+   margin: auto;
+   padding: 10px;
+   background: #fff;
+   width: 400px;
+   border: 1px #888 solid;
+   border-radius: 15px;
+   height: 170px;
+   /*border: 1px #444 solid;*/
+}

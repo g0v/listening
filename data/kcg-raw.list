@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+<BASE TARGET="_self">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-eqiv="description" content="高雄市政府社會局,落實福利社區化,發展多元的社會服務方案,建構暢通的福利網絡,有效運用社政人力並提升社福專業素質,活化與培力民間組織
+,建構以家庭為主的社會工作模式" />
+<meta http-eqiv="keywords" content="高雄市政府社會局,高雄市,社會局,社會處,福利,社會救助,身心障礙，新移民，防治，家庭暴力，老人,婦女,婦幼,幼童,兒童,青少年,志工,社工" />
+
+<title>身心障礙福利 - 高雄市政府社會局</title>
+
+<link href="tw/kcg_css.css" rel="stylesheet" type="text/css" />
+<link href="tw/mail_css.css" rel="stylesheet" type="text/css" />
+
+<script src="Scripts/top.js" type="text/javascript"></script>
+<script src="Scripts/jquery.min.js" type="text/javascript"></script>
+<script src="Scripts/home_tab.js" type="text/javascript"></script>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+
+</head>
+<body marginheight="0" marginwidth="0" leftMargin="0" topMargin="0">
+<table width="50%" border="0" cellspacing="0" cellpadding="0" align="center" style="width:1000px;" summary="排版表格">
+  <tr>
+    <td colspan="2">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="排版表格">
+      <tr>
+        <td width="1%" valign="top"><img src="images/top_img.gif" alt="回到頂端功能圖示" width="4" height="27" /></td>
+        <td width="1%"><a href="#" title="頂端功能選項區" class="ac" accesskey="T">::</a></td>
+        <td width="40%"></td>
+        <td align="left"><div id="topbar"><a href="#"><img src="images/gotop.png" alt="回到頂端" /></a></div></td>
+        <td align="right">
+          <div id="topr_menu">
+            <ul>
+            <li><a href="index.php" class="icon_home" title="首頁">首頁</a></li>
+            <li><a href="?html=sitemap.php" class="icon_sitemap" title="網站導覽">網站導覽</a></li>
+            <li><a href="?html=chief_mail.php" class="icon_mailbox" title="聯絡我們">聯絡我們</a></li>
+            <li><a href="?html=links.htm" title="相關連結"><span>相關連結</span></a></li>
+            <li><a href="en" title="English">English</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="排版表格">
+    	<tr>
+        	<td valign="top" width="35%">
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" summary="排版表格">
+                	<tr>
+                    	<td><a href="index.php" title="高雄市社會局首頁"><img src="images/title.png" alt="高雄市政府社會局Social Affairs Bureau of Kaohsiung City Government" width="365" height="78" /></a></td>
+                    </tr>
+                    <tr>
+                    	<td><img src="images/img_line.png" alt="*" /></td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        <FORM  METHOD="GET" ACTION="" NAME="form_key">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="top_form" summary="排版表格">
+                        	<tr>
+                            	<td valign="top">
+                                	<INPUT TYPE="HIDDEN" NAME="html" VALUE="keyword_search.php">
+                                	<label for="search_word" style="background:url(images/img_search1.png) no-repeat; padding-right:8px; cursor:pointer;"><span style="color:#df6003; font-size:13px; visibility:hidden;">關鍵字搜尋</span></label>
+                                <input type="text" name="get_key_content" id="search_word" class="h_input" style="width:200px;" value="請輸入關鍵字" accesskey="S" /> <input type="image" name="Submit" border="0" src="images/btn_search.gif" alt="開始搜尋按鈕" style="vertical-align:-11px;">
+                                     <!--<input type="image" name="button" border="0" src="images/btn_search2.gif" alt="進階搜尋" style="vertical-align:-11px;">-->
+                                </td>
+                            </tr>
+                        </table>
+                        </FORM>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            
+            <td>
+            	<div id="theme_block">
+                <div id="flash_theme">
+                    <script type="text/javascript">
+				AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0','width','635','height','135','src','images/theme','quality','high','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','images/theme' ); //end AC code
+					  </script>
+				
+						  <noscript>
+						  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="635" height="135">
+							<param name="movie" value="images/theme.swf" />
+							<param name="quality" value="high" />
+							<embed src="images/theme.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="635" height="135"></embed>
+						  送愛到每一個角落</object>
+						</noscript>
+                </div>
+                </div>
+            </td>
+        </tr>
+    </table>    
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="background:url(images/menu_bg.png) top repeat-x">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="排版表格">
+      <tr>
+        <td width="1%"><img src="images/menu_left.png" alt="排版圖" STYLE="width:8px; height:47px;" /></td>
+        <td width="1%" valign="top"><a href="#" title="相關資訊選項區" class="ac" accesskey="M">::</a></td>
+        <td width="98%" style="background:url(images/menu_right.png) top right no-repeat;" align="center" valign="top">
+        <div id="menu">
+                <a href="?prog=3&b_id=6" title="社會局簡介" ><span>社會局簡介</span></a>
+                <a href="http://60.249.196.113/app32/xml/index" title="福利地圖(另開新視窗)" target="_blank"><span>福利地圖</span></a>
+                <a href="?prog=3&b_id=2" title="施政重點" ><span>施政重點</span></a>
+                <a href="?prog=3&b_id=3" title="人事政風" ><span>人事政風</span></a>
+                <a href="?html=rule_download.php" title="法規下載"><span>法規下載</span></a>
+                <a href="?html=form_download.php" title="表單下載"><span>表單下載</span></a>
+                <a href="?prog=3&b_id=1" title="捐款徵信" ><span>捐款徵信</span></a>
+                <a href="?prog=3&b_id=4" title="公益彩券" ><span>公益彩券</span></a>
+                <a href="?html=qa.php" title="常見問題Q&amp;A"><span>常見問題</span></a>
+            </div>
+        </td>
+      </tr>
+    </table>
+
+    </td>
+  </tr>
+
+<SCRIPT LANGUAGE="JavaScript">
+function openDialog( url, set, obj, item ){
+    //檢查是否支援 Show Dialog
+	item = encodeURI(item);
+	url = url+'?item='+item;
+    if ( typeof window != "undefined"
+    && ((typeof window.showModalDialog)=='function' || (typeof window.showModalDialog)=='object' ) ) {
+		if( !set )set = 'dialogHeight:250px;dialogWidth:400px;dialogTop:220px;dialogLeft:200px;';
+		var tt = new Date(); //VOID CATCH
+		window.showModalDialog( url, self, set );
+	}else{
+		if( set ){
+			set = set.replace( /;/g, ',' );
+			set = set.replace( /dialog/g, '' );
+			set = set.replace( /:/g, '=' );
+		}
+		openWin( url, set );
+	}
+}
+function openWin( url, set, name ){
+	if( name==null )name = 'NEW';
+    var winID = window.open('blank.htm',name, "top=300px,width=400px,height=300px,left=300px,scrollbars=1,resizable=yes," + set );
+    winID.location.href = url;
+    if( winID.opener==null )winID.opener = window;
+    winID.opener.name = 'opener';
+}
+</SCRIPT><tr>
+<td width="20%" valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="福利類別表格">
+      <tr>
+        <td valign="bottom" style="background:url(images/left_top.png) top left no-repeat; width:199px; height:23px;">
+            <a href="#" title="福利類別選項區" class="ac" accesskey="L">::</a>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" style="background:url(images/left_bg.png) repeat-y" class="left_menu">
+            <div class="item">
+            <ul>
+                        <li><img src="_php_module/upload/welfare/WELFARE_2.gif" alt="*" /><a href="?prog=1&b_id=2" title="兒童及少年福利">兒童及少年福利</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_25.gif" alt="*" /><a href="?prog=1&b_id=25" title="托育福利">托育福利</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_4.gif" alt="*" /><a href="?prog=1&b_id=4" title="老人福利">老人福利</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_5.gif" alt="*" /><a href="?prog=1&b_id=5" title="身心障礙福利">身心障礙福利</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_6.gif" alt="*" /><a href="?prog=1&b_id=6" title="社會救助">社會救助</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_3.gif" alt="*" /><a href="?prog=1&b_id=3" title="婦女福利">婦女福利</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_7.gif" alt="*" /><a href="?prog=1&b_id=7" title="單親及特境家庭福利">單親及特境家庭福利</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_8.gif" alt="*" /><a href="?prog=1&b_id=8" title="新移民家庭服務">新移民家庭服務</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_11.gif" alt="*" /><a href="?prog=1&b_id=11" title="家庭暴力及性侵害">家庭暴力及性侵害</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_16.gif" alt="*" /><a href="?prog=1&b_id=16" title="社工專業與志願服務">社工專業與志願服務</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_14.gif" alt="*" /><a href="?prog=1&b_id=14" title="社區發展協會">社區發展協會</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_15.gif" alt="*" /><a href="?prog=1&b_id=15" title="人民團體">人民團體</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_26.gif" alt="*" /><a href="?prog=1&b_id=26" title="合作社">合作社</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_27.gif" alt="*" /><a href="?prog=1&b_id=27" title="公益勸募">公益勸募</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_28.gif" alt="*" /><a href="?prog=1&b_id=28" title="社福基金會">社福基金會</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_29.gif" alt="*" /><a href="?prog=1&b_id=29" title="災害整備與災後重建">災害整備與災後重建</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_17.gif" alt="*" /><a href="?prog=1&b_id=17" title="公設民營機構">公設民營機構</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_21.gif" alt="*" /><a href="?prog=1&b_id=21" title="統計專區">統計專區</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_23.gif" alt="*" /><a href="?prog=1&b_id=23" title="為民服務專區">為民服務專區</a></li>
+                        <li><img src="_php_module/upload/welfare/WELFARE_24.gif" alt="*" /><a href="?prog=1&b_id=24" title="研究發展">研究發展</a></li>
+                        </ul>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><img src="images/left_bottom.png" alt="" width="199" height="17" /></td>
+      </tr>
+    </table>
+
+    	<div id="service_tel">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="排版表格:相關服務專線">
+                <tr>
+                    <td><img src="images/service_tel_title.png" width="198" height="44" alt="相關服務專線" /></td>
+                </tr>
+                <tr>
+                    <td style="background:url(images/service_tel_bg.png) left bottom repeat-y;">
+                    	<p>保護專線<b class="tel">113</b><br />
+						社會福利諮詢專線<b class="tel">07-3344885</b><br />
+                        托育服務諮詢專線<b class="tel">07-3943322</b><br />
+                        生命轉彎專線<b class="tel">07-3226666</b><br />
+                        家庭關懷諮詢專線<b class="tel">07-5350885#2</b><br />
+                        男性關懷專線<b class="tel">07-5350885#1</b>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</td>
+
+<td valign="top" style="padding-left:15px;">
+	<DIV style="padding-left:5px; padding-bottom:5px;">
+	<a href="" title="最新消息、最新活動及相關網站區" class="ac" accesskey="C">:::</A>
+	<SPAN CLASS="path"><a href="index.php" title="返回首頁">首頁</a>
+						&gt;
+			身心障礙福利				</SPAN>
+	</DIV>
+		
+		<img src="_php_module/upload/welfare/WELFARE_B_5.png" alt="身心障礙福利" class="title_img" />
+			<DIV class="bar">身心障礙者福利</DIV>
+		<DIV class="content">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="content_t" summary="排版表格">
+			<tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=351" title="無障礙之家住宿照顧補助">無障礙之家住宿照顧補助</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=398" title="現金給付之社會保險補助">現金給付之社會保險補助</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=395" title="全民健康保險保費自付額補助">全民健康保險保費自付額補助</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=393" title="輔助器具-(申請前不得先購買或裝配輔助器具)">輔助器具-(申請前不得先購買或裝配輔助器具)</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=391" title="專用車牌">專用車牌</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=389" title="專用停車位識別證">專用停車位識別證</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=383" title="牌照稅減免">牌照稅減免</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=381" title="高雄市公有收費停車場停車優惠">高雄市公有收費停車場停車優惠</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=378" title="小型復康巴士及大型無障礙公車預約服務">小型復康巴士及大型無障礙公車預約服務</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=375" title="持博愛卡暨博陪卡之交通優惠">持博愛卡暨博陪卡之交通優惠</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=328" title="自力更生方案">自力更生方案</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=326" title="創業貸款利息補助">創業貸款利息補助</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=325" title="重度以上身心障礙者福利津貼">重度以上身心障礙者福利津貼</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=321" title="內政部於96年起開辦之住宅補貼方案">內政部於96年起開辦之住宅補貼方案</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=313" title="身心障礙者房屋租金補貼">身心障礙者房屋租金補貼</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=308" title="身心障礙者購屋貸款利息補貼">身心障礙者購屋貸款利息補貼</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=345" title="身心障礙者日間照顧及住宿式照顧費用補助">身心障礙者日間照顧及住宿式照顧費用補助</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=347" title="無障礙之家日間照顧補助">無障礙之家日間照顧補助</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=425" title="身心障礙照顧者津貼">身心障礙照顧者津貼</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=741" title="身心障礙者承租停車位租金補助">身心障礙者承租停車位租金補助</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=29&s_id=742" title="身心障礙者購買停車位貸款利息補貼">身心障礙者購買停車位貸款利息補貼</a>		
+									</td>
+			</tr>			</table>
+			
+		</DIV>
+		<DIV class="bar">身心障礙者服務</DIV>
+		<DIV class="content">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="content_t" summary="排版表格">
+			<tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=402" title="身心障礙者保護服務">身心障礙者保護服務</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=401" title="發展遲緩兒童通報轉介暨個案管理服務">發展遲緩兒童通報轉介暨個案管理服務</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=400" title="通報轉銜暨個案管理服務">通報轉銜暨個案管理服務</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=370" title="視覺障礙者生活照顧輔佐服務">視覺障礙者生活照顧輔佐服務</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=331" title="職業訓練服務">職業訓練服務</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=306" title="換發或補發身心障礙手冊">換發或補發身心障礙手冊</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=341" title="居家服務">居家服務</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=343" title="臨時及短期照顧服務">臨時及短期照顧服務</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=334" title="公益彩券經銷商資格審查證明書核發">公益彩券經銷商資格審查證明書核發</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=337" title="按摩及理療按摩技術士執業許可證核（換）發">按摩及理療按摩技術士執業許可證核（換）發</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=305" title="核發身心障礙手冊">核發身心障礙手冊</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=413" title="手語翻譯服務">手語翻譯服務</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=424" title="權益受損協調">權益受損協調</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=426" title="精障者生活重建服務-茶點小鋪">精障者生活重建服務-茶點小鋪</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=427" title="精障者生活重建服務-農場園藝">精障者生活重建服務-農場園藝</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=463" title="日間社區服務">日間社區服務</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=30&s_id=465" title="高雄巿視覺障礙者社會重建中心">高雄巿視覺障礙者社會重建中心</a>		
+									</td>
+			</tr>			</table>
+			
+		</DIV>
+		<DIV class="bar">身心障礙機構及社團</DIV>
+		<DIV class="content">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="content_t" summary="排版表格">
+			<tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=31&s_id=356" title="社區家園服務（社區居住）">社區家園服務（社區居住）</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=31&s_id=372" title="顏面損傷服務">顏面損傷服務</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=31&s_id=364" title="日間服務機構/據點">日間服務機構/據點</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=31&s_id=361" title="住宿機構">住宿機構</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=31&s_id=404" title="高雄市身心障礙福利社團及機構一覽表">高雄市身心障礙福利社團及機構一覽表</a>		
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=31&s_id=745" title="101年度公設民營身心障礙福利機構/據點評鑑成績">101年度公設民營身心障礙福利機構/據點評鑑成績</a>		
+									</td>
+			</tr>			</table>
+			
+		</DIV>
+		<DIV class="bar">優先採購身心障礙產品專區</DIV>
+		<DIV class="content">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="content_t" summary="排版表格">
+			<tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="http://ptp.moi.gov.tw/" TITLE="內政部優先採購網路資訊平台(另開新視窗)" target="_blank" >內政部優先採購網路資訊平台(另開新頁)</a>
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=93&s_id=459" title="優先採購身心障礙產品">優先採購身心障礙產品</a>		
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=93&s_id=740" title="優先採購業務說明參考資料101.11.02">優先採購業務說明參考資料101.11.02</a>		
+									</td>
+			</tr>			</table>
+			
+		</DIV>
+		<DIV class="bar">導盲犬專區</DIV>
+		<DIV class="content">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="content_t" summary="排版表格">
+			<tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="http://www.guidedog.org.tw/" TITLE="台灣導盲犬協會(另開新視窗)" target="_blank" >台灣導盲犬協會(另開新頁)</a>
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="http://www.guidedog.tw/" TITLE="惠光導盲犬基金會(另開新視窗)" target="_blank" >惠光導盲犬基金會(另開新頁)</a>
+									</td>
+			</tr><tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="http://173.83.22.176/dogschool/" TITLE="屏東科技大學工作犬訓練學校(另開新視窗)" target="_blank" >屏東科技大學工作犬訓練學校(另開新頁)</a>
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="http://173.83.75.200/www_pet/index.php" TITLE="中華民國台灣協助犬協會(另開新視窗)" target="_blank" >中華民國台灣協助犬協會(另開新頁)</a>
+									</td>
+			</tr>			</table>
+			
+		</DIV>
+		<DIV class="bar">ICF專區</DIV>
+		<DIV class="content">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="content_t" summary="排版表格">
+			<tr>		
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="http://socbu.kcg.gov.tw/dis_kcg/" TITLE="高雄市政府社會局ICF專區(另開新視窗)" target="_blank" >ICF專區(另開新頁)</a>
+									</td>
+					
+				<td width="50%">
+					<img src="images/text_icon.png" alt="*" />
+											<a href="?prog=2&b_id=5&m_id=157&s_id=739" title="身心障礙障別新舊對照表">身心障礙障別新舊對照表</a>		
+									</td>
+			</tr>			</table>
+			
+		</DIV>
+		
+﻿</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="footer" summary="排版表格">
+  <tr>
+    <td align="center">
+    	<DIV id="footer_content">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0" summary="排版表格:版權、無障礙及我的E政府標章區域">
+            	<tr>
+                	<td valign="top" class="logo"><img src="images/footer_logo.png" width="43" height="43" alt="高雄市政府社會局標誌圖" /></td>
+                    <td align="left">
+                    	<img src="images/footer_add.gif" alt="地址圖示" width="12" height="11" />服務地址：80203高雄市四維三路2號10樓　　　
+                        <img src="images/footer_tel.gif" alt="電話圖示" width="12" height="11" />服務電話：(07)334-4885　　　
+                        <img src="images/footer_fax.gif" alt="傳真圖示" width="12" height="11" />傳真：(07)330-3628　　
+                        <a href="?html=kscg_map.htm" title="交通位置圖"><img src="images/footer_map.png" alt="交通位置圖:高雄市四維三路2號" style=" vertical-align:-40%;" /></a><br />
+                        <img src="images/footer_time.gif" alt="辦公時間圖示" width="12" height="11" />辦公時間：週一至週五　上午 08:00 ~ 12:00 下午：13:30 ~ 17:30<br />
+                        Copyright © 2011 高雄市社會局 Social Affairs Bureau of Kaohsiung City Government. All Rights Reserved. <br />
+                        建議使用IE7.0以上，螢幕解析度為1024x768　　
+						<a href="?html=law.htm" title="隱私權政策">隱私權政策 | 網站安全政策</a>
+                    </td>
+                    <td><a href="http://www.webguide.nat.gov.tw/wSite/sp?xdUrl=/wSite/enable/valid.jsp&conId=20070130102357" title="開啟新視窗_本網站通過無障礙檢"><img src="images/aplus.jpg" alt="開啟新視窗_本網站通過無障礙檢" width="88" height="31" /></a> <a href="http://www.gov.tw/" title="開啟新視窗_我的E政府"><img src="images/govlogo.gif" alt="開啟新視窗_我的E政府" width="43" height="45" /></a><img src="images/QRCode-S.png" alt="社會局QR_Code" /></td>
+                </tr>
+            </table>
+        </DIV>
+    </td>
+</table>
+</body>
+</html>

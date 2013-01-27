@@ -432,12 +432,20 @@ app.get('/listening',function(req,res){
 })
 
 app.post('/listening', function(req, res){
-
+  console.log(req.body.name);
 
 });
 //Login mongoDB
-app.get('/testMongodb', function(req, res) {
+app.get('/buyearphone', function(req, res) {
+  res.render('buyearphone', {
+    user: 'yoyom'
+  });
 
+});
+app.get('/education', function(req, res) {
+  res.render('education', {
+    user: 'yoyom'
+  });
 
 });
 

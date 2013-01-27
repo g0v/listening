@@ -23,3 +23,11 @@ body{
    background: #aaa;
    float: left;
 }
+.selectcontent{
+   height: 500px;
+   background: #fff;
+   padding: 40px;
+   width: 400px;
+   margin: auto;
+   border: 1px #a7a7a7 solid;
+}

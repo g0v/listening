@@ -17,7 +17,9 @@
     	"yql": ">= 0.0.0",
     	"mongodb": ">= 0.0.0",
     	"bcrypt": ">= 0.5.x",
-    	"emailjs": ">= 0.3.x"
+    	"emailjs": ">= 0.3.x",
+      "jquery": ">= 0.0.0",
+      "fb": ">= 0.0.0"
   	},
   	"engines": {
 		"node": "0.8.x",

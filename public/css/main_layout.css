@@ -34,3 +34,9 @@ body{
 .command-button{
    width:300px
 }
+.indexcontent{
+   margin: auto;
+   width: 300px;
+   height: 150px;
+   /*border: 1px #444 solid;*/
+}

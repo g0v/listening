@@ -1,5 +1,66 @@
 <% if (!user) { %>
-	<h2>Welcome! Please log in.</h2>
+<html>
+	<head>
+		<!--<link rel="stylesheet" type="text/css" media="all" href="/css/style.css">-->
+		<!--<link rel="stylesheet" type="text/css" media="all" href="/css/custom.css">-->
+		<!--<link rel="stylesheet" type="text/css" media="all" href="/css/main_layout.css">-->
+		<!--<link rel="stylesheet" type="text/css" media="all" href="/css/jquery.gridster.min.css">-->
+		<link rel="stylesheet" type="text/css" media="all" href="/css/modern.css">
+		<link rel="stylesheet" type="text/css" media="all" href="/css/modern-responsive.css">
+		<link rel="stylesheet" type="text/css" media="all" href="/css/main_layout.css">
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<!--<script type="text/javascript" src="/js/jquery.gridster.min.js"></script>-->
+	</head>
+	<body>
+	<div class="page">
+	   <div class="grid">
+	        <div class="row">
+	            <div style="margin-top:50px;">
+	                <h2 style="text-align:center">Listening , Deaf</h2>
+	            </div>
+	            <div class="nav-bar" style="background:#F1F0F0;margin-top:20px;margin-bottom:20px;">
+	                <div class="nav-bar-inner">
+	                    <ul class="menu">
+	                        <li>
+	                            <a href="./listening" style="color:#444;margin-left:10px"> 政府福利</a>
+	                        </li>
+	                    </ul>
+	                    <span class="dividbar"></span>
+	                    <ul class="menu">
+	                        <li>
+	                            <a href="./buyearphone" style="color:#444;margin-left:10px">購買助聽器</a>
+	                        </li>
+	                    </ul>
+	                    <span class="dividbar"></span>
+	                    <ul class="menu">
+	                        <li>
+	                            <a href="./education" style="color:#444;margin-left:10px">聾人教育</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+
+	            <div class="indexcontent">
+	            	不好意思，我們需要您的登入請求
+	            	<div style="text-align:center"><h2>登入請求</h2></div>
+	            	<a href="/auth/facebook"><img src="login-with-facebook.png" width="154" height="22"></a>
+	            </div>
+	            <!--<label class="input-control checkbox">
+	                <input type="checkbox">
+	                <span class="helper">不曾領過政府補助</span>
+	            </label>-->
+	            <!--<form action='/test' method='post'>
+	                <input type='text' name='name' value='fred'>
+	                <input type='text' name='tel' value='0926xxx572'>
+	                <input type='submit' value='Submit'>
+	            </form>-->
+	        </div>
+	    </div>
+	</div>
+	
+	</body>
+</html>
+	<!--<h2>Welcome! Please log in.</h2>-->
 <% } else { %>
 	<h2>Hello, <%= user.username %>.</h2>
 	<h2>Hello, <%= user.gender %>.</h2>

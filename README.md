@@ -1,7 +1,6 @@
 # listening 聽障福利小幫手
 
-一個成功的社會並不是看富裕的人過得多優渥，
-而是弱勢的如何自在的生存。
+一個成功的社會並不是看富裕的人過得多優渥，而是弱勢的如何自在的生存。
 
 歡迎參加
 
@@ -20,11 +19,10 @@ iamblue <blue.chen@kindminds.com>
 
     $ node app.js
 
-## heroku
+## Links
 
 * http://listening.g0v.tw
 * https://trello.com/board/listening/5104c0081e21a2cd25000978
-
 
 ## License
 

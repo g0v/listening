@@ -28,7 +28,7 @@ iamblue <tonyone0902@gmail.com>
 
 The MIT license.
 
-Copyright &copy; 2013 KUN-HANG LEE , PO-JU CHEN
+Copyright &copy; 2013 PO-JU CHEN , KUN-HANG LEE 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

@@ -5,7 +5,7 @@
 歡迎參加
 
 #### 計畫主持人
-iamblue <blue.chen@kindminds.com>
+iamblue <tonyone0902@gmail.com>
 
 ##### 參與者
 * wildjcrt <wildjcrt@yahoo.com.tw>
@@ -28,7 +28,7 @@ iamblue <blue.chen@kindminds.com>
 
 The MIT license.
 
-Copyright &copy; 2013 KUN-HANG LEE
+Copyright &copy; 2013 KUN-HANG LEE , PO-JU CHEN
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

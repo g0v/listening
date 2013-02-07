@@ -52,10 +52,11 @@ new YQL.exec('select * from data.html.cssselect where url="http://socbu.kcg.gov.
         for (var i = 0, div2 = response.query.results.results.div[0].table.tr[0].td.length; i < div2; i++){
             //console.log(response.query.results.results.div[0].table.tr[j].td[i].a.href);
             var dataurl = response.query.results.results.div[0].table.tr[j].td[i].a.href;
+            var datatitle = response.query.results.results.div[0].table.tr[j].td[i].a.title;
             var ksg = 'http://socbu.kcg.gov.tw/';
             ksg += response.query.results.results.div[0].table.tr[j].td[i].a.href;
+            //console.log(ksg)
             var yql_url = 'select * from data.html.cssselect where url="'+ksg+'" and css=".content"';
-
             //找該檔案的內容
             new YQL.exec(yql_url, function(res) {
               //console.log ('詳情'+res.query.results.results.div.strong[0].content);

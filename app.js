@@ -44,7 +44,7 @@ app.configure(function() {
 //桃園縣政府(TYG)  
 //行政規則   http://www.tycg.gov.tw/ch/home.jsp?id=15&parentpath=0,1,12&mcustomize=law_list.jsp
 //自治規則   http://law.tycg.gov.tw/SearchAllResultList.aspx?KeyWord=%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99&Cur=L
-
+//桃園政府可以打關鍵字搜尋
 
 //高雄市政府
 new YQL.exec('select * from data.html.cssselect where url="http://socbu.kcg.gov.tw/?prog=1&b_id=5" and css=".content"', function(response) {

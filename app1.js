@@ -28,6 +28,15 @@ app.configure(function() {
   app.use(express.static(__dirname + '/public'));
 });
 
+
+
+new YQL.exec('select * from data.html.cssselect where url="http://socbu.kcg.gov.tw/?prog=1&b_id=5" and css=".bar"', function(response) {
+
+
+  console.log(response);
+}
+
+
 app.get('/', function(req, res) {
   res.render('index', {
     user: req.user

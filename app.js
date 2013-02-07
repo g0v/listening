@@ -28,12 +28,22 @@ app.configure(function() {
   app.use(express.static(__dirname + '/public'));
 });
 
-//記錄福利法規
+//記錄身障福利法規
 //新北市(NTPG)    http://www.sw.ntpc.gov.tw/_file/1588/SG/24725/D.html
 //高雄市(KSG)     http://socbu.kcg.gov.tw/?prog=1&b_id=5
-//台北市政府       馬的不能爬 https://www.e-services.taipei.gov.tw/hypage.cgi?HYPAGE=index_01.htm&clsid0=1&clsid1=17&clsid2=62&cond=all&total_srv=#showname_place
+//台北市政府(TPG)  （馬的不能爬 ）https://www.e-services.taipei.gov.tw/hypage.cgi?HYPAGE=index_01.htm&clsid0=1&clsid1=17&clsid2=62&cond=all&total_srv=#showname_place
+//台中市政府(TCG)  http://www.society.taichung.gov.tw/section/index.asp?Parser=99,16,257,,,,,,,,1,8,,4
 
+//基隆市政府(KLG)  http://exlaw.klcg.gov.tw/SearchAllResultList.aspx?KeyWord=%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99&Cur=L
+//基隆市政府可以打關鍵字搜尋
 
+//新竹市政府(HCG)  http://society.hccg.gov.tw/web/SelfPageSetup?command=display&pageID=22305&FP=39122
+//台南市政府(TNG)  http://social.tncg.gov.tw/social/socpage.asp?nsub=C0A300
+//南投縣政府(NTG)  http://www.nantou.gov.tw/big5/download.asp?dptid=376480000AU130000&catetype=01&cid=957
+
+//桃園縣政府(TYG)  
+//行政規則   http://www.tycg.gov.tw/ch/home.jsp?id=15&parentpath=0,1,12&mcustomize=law_list.jsp
+//自治規則   http://law.tycg.gov.tw/SearchAllResultList.aspx?KeyWord=%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99&Cur=L
 
 
 //高雄市政府
@@ -74,10 +84,42 @@ new YQL.exec('select * from data.html.cssselect where url="http://www.sw.ntpc.go
 
 //台北市政府   馬的不能爬
 
-//台中市政府
+//台中市政府(TCG)
+var parserTCG = 'http://www.society.taichung.gov.tw/section/index.asp?Parser=99,16,257,,,,,,,,'+1+',8,,4';
 
+new YQL.exec('select * from data.html.cssselect where url="http://www.sw.ntpc.gov.tw/_file/1588/SG/24725/D.html" and css=".dlarktext-13"', function(response) {
+    
+});
 
+//基隆市政府（KLG)
+new YQL.exec('select * from data.html.cssselect where url="http://exlaw.klcg.gov.tw/SearchAllResultList.aspx?KeyWord=%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99&Cur=L" and css="body"', function(response) {
+    
+});
 
+//新竹市政府(HCG)
+
+new YQL.exec('select * from data.html.cssselect where url="http://society.hccg.gov.tw/web/SelfPageSetup?command=display&pageID=22305&FP=39122" and css="body"', function(response) {
+    
+});
+
+//台南市政府(TNG)
+new YQL.exec('select * from data.html.cssselect where url="http://social.tncg.gov.tw/social/socpage.asp?nsub=C0A300" and css="body"', function(response) {
+    
+});
+
+//南投縣政府(NTG)
+new YQL.exec('select * from data.html.cssselect where url="http://www.nantou.gov.tw/big5/download.asp?dptid=376480000AU130000&catetype=01&cid=957" and css="body"', function(response) {
+    
+});
+
+//桃園縣  （行政規則）
+new YQL.exec('select * from data.html.cssselect where url="http://www.tycg.gov.tw/ch/home.jsp?id=15&parentpath=0,1,12&mcustomize=law_list.jsp" and css="body"', function(response) {
+    
+});
+//桃園縣   （自治規則）
+new YQL.exec('select * from data.html.cssselect where url="http://law.tycg.gov.tw/SearchAllResultList.aspx?KeyWord=%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99&Cur=L" and css="body"', function(response) {
+    console.log('ya');
+});
 
 
 

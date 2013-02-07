@@ -28,27 +28,50 @@ app.configure(function() {
   app.use(express.static(__dirname + '/public'));
 });
 
+//記錄福利法規
+//新北市(NTPG)    http://www.sw.ntpc.gov.tw/_file/1588/SG/24725/D.html
+//高雄市(KSG)    http://socbu.kcg.gov.tw/?prog=1&b_id=5
+
+
+
+
 
 //高雄市政府
 new YQL.exec('select * from data.html.cssselect where url="http://socbu.kcg.gov.tw/?prog=1&b_id=5" and css=".content"', function(response) {
-  for (var j = 0, div1 = response.query.results.results.div[0].table.tr.length; j < div1; j++)
-    for (var i = 0, div2 = response.query.results.results.div[0].table.tr[0].td.length; i < div2; i++){
-      console.log(response.query.results.results.div[0].table.tr[j].td[i].a.href);
-      var dataurl = response.query.results.results.div[0].table.tr[j].td[i].a.href;
-      var ksg = 'http://socbu.kcg.gov.tw/';
-      ksg += response.query.results.results.div[0].table.tr[j].td[i].a.href;
-      var yql_url = 'select * from data.html.cssselect where url="'+ksg+'" and css=".content"';
+    for (var j = 0, div1 = response.query.results.results.div[0].table.tr.length; j < div1; j++){
+        for (var i = 0, div2 = response.query.results.results.div[0].table.tr[0].td.length; i < div2; i++){
+            //console.log(response.query.results.results.div[0].table.tr[j].td[i].a.href);
+            var dataurl = response.query.results.results.div[0].table.tr[j].td[i].a.href;
+            var ksg = 'http://socbu.kcg.gov.tw/';
+            ksg += response.query.results.results.div[0].table.tr[j].td[i].a.href;
+            var yql_url = 'select * from data.html.cssselect where url="'+ksg+'" and css=".content"';
 
-      //找該檔案的內容
-      new YQL.exec(yql_url, function(res) {
-        console.log ('詳情'+res.query.results.results.div.strong[0].content);
-      });
-
-      console.log(response.query.results.results.div[0].table.tr[j].td[i].a.title);
-      console.log(response.query.results.results.div[0].table.tr[j].td[i].a.content);
+            //找該檔案的內容
+            new YQL.exec(yql_url, function(res) {
+              //console.log ('詳情'+res.query.results.results.div.strong[0].content);
+            });
+            //console.log(response.query.results.results.div[0].table.tr[j].td[i].a.title);
+            //console.log(response.query.results.results.div[0].table.tr[j].td[i].a.content);
+        }
     }
 });
-//
+
+//新北市政府
+new YQL.exec('select * from data.html.cssselect where url="http://www.sw.ntpc.gov.tw/_file/1588/SG/24725/D.html" and css=".dlarktext-13"', function(response) {
+    for (var k = 0, div1 = response.query.results.results.td.length; k < div1; k++){
+        if (response.query.results.results.td[k].a != null){
+            //console.log(response.query.results.results.td[k].a.href);
+            //console.log(response.query.results.results.td[k].a.title);
+            var NTPG = 'http://www.sw.ntpc.gov.tw'
+            NTPG += response.query.results.results.td[k].a.href;
+            var yql_url = 'select * from data.html.cssselect where url="'+NTPG+'" and css="tbody"';
+            new YQL.exec(yql_url, function(res) {
+              //爬詳情
+            });
+        }
+    }
+});
+
 
 
 app.get('/', function(req, res) {

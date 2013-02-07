@@ -3,8 +3,8 @@ var express = require('express'),
     util = require('util'),
     FacebookStrategy = require('passport-facebook').Strategy,
     jQuery = require('jquery'),
-    FACEBOOK_APP_ID = "472891892763096",
-    FACEBOOK_APP_SECRET = "04ff2e9610264f40d9881428459c5c89",
+    FACEBOOK_APP_ID = "",
+    FACEBOOK_APP_SECRET = "",
     FB = require('fb'),
     YQL = require("yql");
     

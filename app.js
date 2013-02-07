@@ -30,8 +30,8 @@ app.configure(function() {
 
 //記錄福利法規
 //新北市(NTPG)    http://www.sw.ntpc.gov.tw/_file/1588/SG/24725/D.html
-//高雄市(KSG)    http://socbu.kcg.gov.tw/?prog=1&b_id=5
-
+//高雄市(KSG)     http://socbu.kcg.gov.tw/?prog=1&b_id=5
+//台北市政府       馬的不能爬 https://www.e-services.taipei.gov.tw/hypage.cgi?HYPAGE=index_01.htm&clsid0=1&clsid1=17&clsid2=62&cond=all&total_srv=#showname_place
 
 
 
@@ -71,6 +71,13 @@ new YQL.exec('select * from data.html.cssselect where url="http://www.sw.ntpc.go
         }
     }
 });
+
+//台北市政府   馬的不能爬
+
+//台中市政府
+
+
+
 
 
 

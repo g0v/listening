@@ -430,3 +430,137 @@ new YQL.exec('select * from data.html.cssselect where url="http://socbu.kcg.gov.
   });
 
 });
+
+
+
+
+
+//------------
+
+fs.readFile('./data/structural_data/KSG/社會救助.json', function (err, data) {
+  if (err) throw err;
+  var edata =   JSON.parse(data)
+  for (var i in edata){
+    edata[i].category = '社會救助';
+    var bhref = edata[i].href;
+    var ahref = 'http://socbu.kcg.gov.tw/'+bhref;
+    edata[i].href = ahref
+  }
+  fs.writeFile('./data/structural_data/KSG/社會救助(edit).json',JSON.stringify(edata), function (err) {
+    if (err) throw err;
+    console.log('KSG 社會救助(edit) saved!');
+  });
+
+});
+
+fs.readFile('./data/structural_data/KSG/家庭暴力及性侵害.json', function (err, data) {
+  if (err) throw err;
+  var edata =   JSON.parse(data)
+  for (var i in edata){
+    edata[i].category = '家庭暴力及性侵害';
+    var bhref = edata[i].href;
+    var ahref = 'http://socbu.kcg.gov.tw/'+bhref;
+    edata[i].href = ahref
+  }
+  fs.writeFile('./data/structural_data/KSG/家庭暴力及性侵害(edit).json',JSON.stringify(edata), function (err) {
+    if (err) throw err;
+    console.log('KSG 家庭暴力及性侵害(edit) saved!');
+  });
+
+});
+fs.readFile('./data/structural_data/KSG/婦女福利.json', function (err, data) {
+  if (err) throw err;
+  var edata =   JSON.parse(data)
+  for (var i in edata){
+    edata[i].category = '婦女福利';
+    var bhref = edata[i].href;
+    var ahref = 'http://socbu.kcg.gov.tw/'+bhref;
+    edata[i].href = ahref
+  }
+  fs.writeFile('./data/structural_data/KSG/婦女福利(edit).json',JSON.stringify(edata), function (err) {
+    if (err) throw err;
+    console.log('KSG 婦女福利(edit) saved!');
+  });
+
+});
+fs.readFile('./data/structural_data/KSG/單親及特境家庭福利.json', function (err, data) {
+  if (err) throw err;
+  var edata =   JSON.parse(data)
+  for (var i in edata){
+    edata[i].category = '單親及特境家庭福利';
+    var bhref = edata[i].href;
+    var ahref = 'http://socbu.kcg.gov.tw/'+bhref;
+    edata[i].href = ahref
+  }
+  fs.writeFile('./data/structural_data/KSG/單親及特境家庭福利(edit).json',JSON.stringify(edata), function (err) {
+    if (err) throw err;
+    console.log('KSG 單親及特境家庭福利(edit) saved!');
+  });
+
+});
+fs.readFile('./data/structural_data/KSG/新移民家庭服務.json', function (err, data) {
+  if (err) throw err;
+  var edata =   JSON.parse(data)
+  for (var i in edata){
+    edata[i].category = '新移民家庭服務';
+    var bhref = edata[i].href;
+    var ahref = 'http://socbu.kcg.gov.tw/'+bhref;
+    edata[i].href = ahref
+  }
+  fs.writeFile('./data/structural_data/KSG/新移民家庭服務(edit).json',JSON.stringify(edata), function (err) {
+    if (err) throw err;
+    console.log('KSG 新移民家庭服務(edit) saved!');
+  });
+
+});
+
+//-------
+fs.readFile('./data/structural_data/KSG/社會救助(edit).json', function (err, data) {
+  if (err) throw err;
+  var edata =   JSON.parse(data)
+  for (var i in edata){
+    var bhref = edata[i].href;
+    console.log(bhref);
+
+    new YQL.exec('select * from data.html.cssselect where url="'+bhref+'" and css=".content"', function(response) {
+      //console.log(response.query.results.results.div);
+      getJSONdataArr.push(response.query.results.results.div)
+        fs.writeFile('./data/structural_data/KSG/社會救助_content.json',JSON.stringify(getJSONdataArr), function (err) {
+          if (err) throw err;
+            console.log('KSG 社會救助_content saved!');
+        });
+    });
+
+
+
+  }
+
+});
+
+//-----------
+
+var yoyo ={}
+
+fs.readFile('./data/structural_data/KSG/社會救助_content.json', function (err, contentdata) {
+  
+  var parsecontentdata = JSON.parse(contentdata)
+  yoyo.data = parsecontentdata ;
+
+})
+
+
+fs.readFile('./data/structural_data/KSG/社會救助(edit).json', function (err, data) {
+  if (err) throw err;
+  var edata =   JSON.parse(data)
+
+  for (var i in edata){
+    edata[i].content = yoyo.data[i]
+    //console.log(bhref);
+              fs.writeFile('./data/structural_data/KSG/社會救助_final.json',JSON.stringify(edata), function (err) {
+          if (err) throw err;
+          console.log('KSG 社會救助_final saved!');
+        });
+  }
+
+
+});

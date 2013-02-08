@@ -21,7 +21,8 @@
       "jquery": ">= 0.0.0",
       "fb": ">= 0.0.0",
         "request": ">= 0.0.0",
-        "cheerio": ">= 0.0.0"
+        "cheerio": ">= 0.0.0",
+      "localStorage": ">= 0.0.0"
   	},
   	"engines": {
 		"node": "0.8.x",

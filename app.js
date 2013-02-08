@@ -54,7 +54,7 @@ app.configure(function() {
 
 
 var getJSONdataArr = []; 
-var getJSONdata = {}
+
 
 //高雄市政府
 new YQL.exec('select * from data.html.cssselect where url="http://socbu.kcg.gov.tw/?prog=1&b_id=5" and css=".content"', function(response) {
@@ -66,34 +66,38 @@ new YQL.exec('select * from data.html.cssselect where url="http://socbu.kcg.gov.
             var ksg = 'http://socbu.kcg.gov.tw/';
             ksg += response.query.results.results.div[0].table.tr[j].td[i].a.href;
             //console.log(ksg)
-            getJSONdata.category = '身心障礙' ;
-            getJSONdata.url = ksg ;
-            getJSONdata.title = datatitle;
-            getJSONdataArr[j] = getJSONdata;
             var yql_url = 'select * from data.html.cssselect where url="'+ksg+'" and css=".content"';
-            //找該檔案的內容
             new YQL.exec(yql_url, function(res) {
-              //console.log ('詳情'+res.query.results.results.div.strong[0].content);
+              if (res.query.results.results != null){
+                var getJSONdata = {},
+                    //check = 0,
+                    datacontent = [];
+                datacontent.push(res.query.results.results.div);
+                // console.log ('詳情'+getJSONdata.content);
+                getJSONdata.category = '身心障礙' ;
+                getJSONdata.url = ksg ;
+                getJSONdata.title = datatitle;
+                getJSONdata.content = datacontent;
+                getJSONdataArr.push(getJSONdata);
+              }
+              else{
+                writedata(getJSONdataArr);
+              }
             });
             //console.log(response.query.results.results.div[0].table.tr[j].td[i].a.title);
             //console.log(response.query.results.results.div[0].table.tr[j].td[i].a.content);
         }
-    }
+    };
     //抓資料
-    // console.log('yoyo:'+JSON.stringify(getJSONdataArr));
-    // fs.writeFile('./data/structural_data/KSG/data.json',JSON.stringify(getJSONdataArr), function (err) {
-    //   if (err) throw err;
-    //   console.log('KSG 身心障礙 saved!');
-    // });
+    //console.log('yoyo:'+JSON.stringify(getJSONdataArr));
 });
 
-fs.readFile('./data/structural_data/KSG/data.json', function (err, data) {
-  if (err) throw err;
-  var parseData = JSON.parse(data);
-  console.log('show:'+parseData[0].url);
-});
-
-
+function writedata(getJSONdataArr){
+      fs.writeFile('./data/structural_data/KSG/data.json',JSON.stringify(getJSONdataArr), function (err) {
+    if (err) throw err;
+    console.log('KSG 身心障礙 saved!');
+  });
+}
 
 //新北市政府
 new YQL.exec('select * from data.html.cssselect where url="http://www.sw.ntpc.gov.tw/_file/1588/SG/24725/D.html" and css=".dlarktext-13"', function(response) {

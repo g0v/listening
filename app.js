@@ -6,6 +6,7 @@ var express = require('express'),
     FACEBOOK_APP_ID = "",
     FACEBOOK_APP_SECRET = "",
     FB = require('fb'),
+    fs = require('fs'),
     YQL = require("yql");
     
 var app = express();
@@ -18,7 +19,7 @@ app.configure(function() {
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.session({
-    secret: 'keyboard cat'
+    //secret: 'keyboard cat'
   }));
   // Initialize Passport!  Also use passport.session() middleware, to support
   // persistent login sessions (recommended).
@@ -28,10 +29,15 @@ app.configure(function() {
   app.use(express.static(__dirname + '/public'));
 });
 
+// fs.writeFile('./data/structural_data/message.txt', 'Hello Node', function (err) {
+//   if (err) throw err;
+//   console.log('It\'s saved!');
+// });
+
 //記錄身障福利法規
 //新北市(NTPG)    http://www.sw.ntpc.gov.tw/_file/1588/SG/24725/D.html
 //高雄市(KSG)     http://socbu.kcg.gov.tw/?prog=1&b_id=5
-//台北市政府(TPG)  （馬的不能爬 ）https://www.e-services.taipei.gov.tw/hypage.cgi?HYPAGE=index_01.htm&clsid0=1&clsid1=17&clsid2=62&cond=all&total_srv=#showname_place
+//台北市政府(TPG)  （不能爬 ）https://www.e-services.taipei.gov.tw/hypage.cgi?HYPAGE=index_01.htm&clsid0=1&clsid1=17&clsid2=62&cond=all&total_srv=#showname_place
 //台中市政府(TCG)  http://www.society.taichung.gov.tw/section/index.asp?Parser=99,16,257,,,,,,,,1,8,,4
 
 //基隆市政府(KLG)  http://exlaw.klcg.gov.tw/SearchAllResultList.aspx?KeyWord=%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99&Cur=L
@@ -46,6 +52,10 @@ app.configure(function() {
 //自治規則   http://law.tycg.gov.tw/SearchAllResultList.aspx?KeyWord=%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99&Cur=L
 //桃園政府可以打關鍵字搜尋
 
+
+var getJSONdataArr = []; 
+var getJSONdata = {}
+
 //高雄市政府
 new YQL.exec('select * from data.html.cssselect where url="http://socbu.kcg.gov.tw/?prog=1&b_id=5" and css=".content"', function(response) {
     for (var j = 0, div1 = response.query.results.results.div[0].table.tr.length; j < div1; j++){
@@ -56,6 +66,10 @@ new YQL.exec('select * from data.html.cssselect where url="http://socbu.kcg.gov.
             var ksg = 'http://socbu.kcg.gov.tw/';
             ksg += response.query.results.results.div[0].table.tr[j].td[i].a.href;
             //console.log(ksg)
+            getJSONdata.category = '身心障礙' ;
+            getJSONdata.url = ksg ;
+            getJSONdata.title = datatitle;
+            getJSONdataArr[j] = getJSONdata;
             var yql_url = 'select * from data.html.cssselect where url="'+ksg+'" and css=".content"';
             //找該檔案的內容
             new YQL.exec(yql_url, function(res) {
@@ -65,7 +79,21 @@ new YQL.exec('select * from data.html.cssselect where url="http://socbu.kcg.gov.
             //console.log(response.query.results.results.div[0].table.tr[j].td[i].a.content);
         }
     }
+    //抓資料
+    // console.log('yoyo:'+JSON.stringify(getJSONdataArr));
+    // fs.writeFile('./data/structural_data/KSG/data.json',JSON.stringify(getJSONdataArr), function (err) {
+    //   if (err) throw err;
+    //   console.log('KSG 身心障礙 saved!');
+    // });
 });
+
+fs.readFile('./data/structural_data/KSG/data.json', function (err, data) {
+  if (err) throw err;
+  var parseData = JSON.parse(data);
+  console.log('show:'+parseData[0].url);
+});
+
+
 
 //新北市政府
 new YQL.exec('select * from data.html.cssselect where url="http://www.sw.ntpc.gov.tw/_file/1588/SG/24725/D.html" and css=".dlarktext-13"', function(response) {
@@ -83,7 +111,7 @@ new YQL.exec('select * from data.html.cssselect where url="http://www.sw.ntpc.go
     }
 });
 
-//台北市政府   馬的不能爬
+//台北市政府   不能爬
 
 //台中市政府(TCG)
 var parserTCG = 'http://www.society.taichung.gov.tw/section/index.asp?Parser=99,16,257,,,,,,,,'+1+',8,,4';
